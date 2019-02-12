@@ -62,6 +62,7 @@ public class PasswordTaker {
         frame.add(PasswordLabel);
         frame.add(password);
         frame.add(container);
+        frame.setResizable(false);
         frame.setVisible(true);  
    }
     

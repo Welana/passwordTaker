@@ -36,6 +36,7 @@ public class PasswordTaker {
     private void prepareGUI(){
         frame = new JFrame("PasswordTaker");
         frame.setSize(375,150);
+        frame.setResizable(false);
         frame.setLocationRelativeTo(null);
 
         container = new JPanel();
@@ -45,6 +46,7 @@ public class PasswordTaker {
         AddressLabel.setText("Username:"); 
         PasswordLabel = new JLabel();   
         PasswordLabel.setText("Password:"); 
+        
         
         username = new JTextField();
         password = new JTextField();
@@ -62,7 +64,6 @@ public class PasswordTaker {
         frame.add(PasswordLabel);
         frame.add(password);
         frame.add(container);
-        frame.setResizable(false);
         frame.setVisible(true);  
    }
     
